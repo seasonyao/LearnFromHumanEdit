@@ -1,6 +1,9 @@
 # LearnFromHumanEdit
 
 ### SALT ENV installation
+If using `conda`, you can get this to work as follows:
+
+```
 conda create -n salt python=3.8
 conda activate salt
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia 
@@ -24,3 +27,4 @@ If qlora for llm:
 pip install -q -U bitsandbytes 
 pip install -q -U git+https://github.com/huggingface/peft.git 
 pip install -q -U git+https://github.com/huggingface/accelerate.git 
+'''
