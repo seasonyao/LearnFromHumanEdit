@@ -19,13 +19,10 @@ pip install ipdb
 pip install rouge
 pip install rouge-score
 pip install trl
+pip install minineedle
 
 pip install datasets
 pip install transformers
-
-# install sequence alignment pkgs
-cd pkgs
-pip install -e . (for minineedle)
 
 If qlora for llm:
 pip install -q -U bitsandbytes 
