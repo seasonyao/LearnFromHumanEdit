@@ -30,4 +30,4 @@ If qlora for llm:
 pip install -q -U bitsandbytes 
 pip install -q -U git+https://github.com/huggingface/peft.git 
 pip install -q -U git+https://github.com/huggingface/accelerate.git
-'''
+```
