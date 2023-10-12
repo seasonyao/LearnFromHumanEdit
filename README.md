@@ -13,6 +13,7 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit
 
 conda install -c conda-forge matplotlib
 conda install -c conda-forge spacy
+conda install -c conda-forge scipy
 python -m spacy download en_core_web_sm
 pip install nltk
 pip install ipdb
@@ -21,11 +22,14 @@ pip install rouge-score
 pip install trl
 pip install minineedle
 
+
 pip install datasets
 pip install transformers
 
 If qlora for llm:
 pip install -q -U bitsandbytes 
 pip install -q -U git+https://github.com/huggingface/peft.git 
-pip install -q -U git+https://github.com/huggingface/accelerate.git 
+pip install -q -U git+https://github.com/huggingface/accelerate.git
 '''
+
+TODO: remove HG auth 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 from jupyter and deactivate it, since it is in github
