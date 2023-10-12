@@ -31,5 +31,3 @@ pip install -q -U bitsandbytes
 pip install -q -U git+https://github.com/huggingface/peft.git 
 pip install -q -U git+https://github.com/huggingface/accelerate.git
 '''
-
-TODO: remove HG auth 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 from jupyter and deactivate it, since it is in github
