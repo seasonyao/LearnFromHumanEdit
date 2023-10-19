@@ -236,8 +236,9 @@ def trainer(script_args, train_dataset, eval_dataset):
         alignment_function=script_args.alignment_function,
     )
 
-    if script_args.eval_first_step and 0:
+    if script_args.eval_first_step or 1:
+        print('evaluating')
         print(dpo_trainer.evaluate())
 
     # 6. train
-    dpo_trainer.train()
+    # dpo_trainer.train()

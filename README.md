@@ -30,6 +30,7 @@ pip install rouge
 pip install rouge-score
 pip install trl
 pip install minineedle
+pip install nltk
 
 pip install datasets
 pip install transformers
@@ -51,9 +52,9 @@ python SALT_trainer.py
 
 ## TODO
 - Adapt the codes *_trainer.py 
-    - to print metrics
-    - Save metrics and output models
+    - Save output models
+    - Save outputs
 - Modify the classes in dpo.py and rename it to be more generic
 - Add link to paper and bib
 - Add dataset
-- Do we need wand instructions
+- Do we need wandb instructions

@@ -1,5 +1,6 @@
 # Metric
 import nltk
+nltk.download('wordnet')
 import numpy as np
 from rouge import Rouge 
 

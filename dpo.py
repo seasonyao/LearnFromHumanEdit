@@ -35,7 +35,9 @@ from torch.nn.utils.rnn import pad_sequence
 
 from sequence_alignment import needle #, smith, core
 # from sequence_alignment.needle import get_position_status
+from metrics import Rouge, AutomaticNgramEval#, AutomaticFactEval
 
+ngram_eval = AutomaticNgramEval()
 
 @dataclass
 class DPODataCollatorWithPadding:
