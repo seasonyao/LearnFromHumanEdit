@@ -58,3 +58,21 @@ python SALT_trainer.py
 - Add link to paper and bib
 - Add dataset
 - Do we need wandb instructions
+
+## Citation
+
+```
+@article{yao2023improving,
+  title={Improving Summarization with Human Edits},
+  author={Yao, Zonghai and Schloss, Benjamin J and Selvaraj, Sai P},
+  journal={arXiv preprint arXiv:2310.05857},
+  year={2023}
+}
+
+@inproceedings{Mishra2023SyntheticIE,
+  title={Synthetic Imitation Edit Feedback for Factual Alignment in Clinical Summarization},
+  author={Prakamya Mishra and Zonghai Yao and Shuwei Chen and Beining Wang and Rohan Mittal and Hong Yu},
+  year={2023},
+  url={https://api.semanticscholar.org/CorpusID:264812518}
+}
+```
