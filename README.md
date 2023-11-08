@@ -50,6 +50,32 @@ python SFT_trainer.py
 python SALT_trainer.py
 ```
 
+## Run Synthetic Data Generation
+
+```
+python SyntheticData.py
+```
+
+### Instructions for Synthetic Data Generation
+Use the above script for the generation of synthetic data of two types:
+1) High to Low (`H2L`): where the chosen summary is the reference summary & rejected summary is the LLM hallucinated summary.
+2) Low to High (`L2H`): where the rejected summary is the pre-trained model-generated summary & chosen summary is the factually improved summary.
+
+Make the following changes based on different synthetic data generation settings:
+
+1) Add the OpenAI API key in the `openai_api_key` variable.
+2) Update the pre-trained model checkpoint path in `model_checkpoint` variable for low to high (L2H) synthetic generation.
+3) Update the OpenAI model type in `gpt_model_type` variable. This model is used to generate hallucinated and factually improved summaries.
+    - `gpt_model_type: gpt-3.5-turbo-0613` for using GPT-3.5 Turbo
+    - `gpt_model_type: gpt-4-0613` for using GPT-4
+4) Update the synthetic data generation type in `synthetic_data_type` variable.
+    - `synthetic_data_type: H2L` for High to Low synthetic data.
+    - `synthetic_data_type: L2H` for Low to High synthetic data.
+5) Update `data_files` variable to update the path for the base dataset.
+6) Use `num_samples` to control the size of the synthetic dataset.
+   
+- 
+
 ## TODO
 - Adapt the codes *_trainer.py 
     - Save output models
