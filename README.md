@@ -76,7 +76,8 @@ Make the following changes based on different synthetic data generation settings
 - 
 
 ## TODO
-- Add datasets (L2H, H2L) * (GPT-3.5-turbo, GPT4) --> every dataset has around 5,000 data points
+- Add after-visit-summary datasets (L2H, H2L) * (GPT-3.5-turbo, GPT4) --> every dataset has around 5,000 data points
+- Run synthetic imitation edit generation codes on the doctor-patient-conversation-to-note synthetic dataset (https://github.com/believewhat/Dr.NoteAid/tree/main)
 
 ## Citation
 
