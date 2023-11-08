@@ -77,13 +77,7 @@ Make the following changes based on different synthetic data generation settings
 - 
 
 ## TODO
-- Adapt the codes *_trainer.py 
-    - Save output models
-    - Save outputs
-- Modify the classes in dpo.py and rename it to be more generic
-- Add link to paper and bib
-- Add dataset
-- Do we need wandb instructions
+- Add datasets (L2H, H2L) * (GPT-3.5-turbo, GPT4) --> every dataset has around 5,000 data points
 
 ## Citation
 
