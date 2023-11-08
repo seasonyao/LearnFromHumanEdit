@@ -73,7 +73,6 @@ Make the following changes based on different synthetic data generation settings
     - `synthetic_data_type: L2H` for Low to High synthetic data.
 5) Update `data_files` variable to update the path for the base dataset.
 6) Use `num_samples` to control the size of the synthetic dataset.
-   
 - 
 
 ## TODO
