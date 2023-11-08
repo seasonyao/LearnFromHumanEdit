@@ -95,10 +95,10 @@ Make the following changes based on different synthetic data generation settings
   year={2023}
 }
 
-@inproceedings{Mishra2023SyntheticIE,
+@article{mishra2023synthetic,
   title={Synthetic Imitation Edit Feedback for Factual Alignment in Clinical Summarization},
-  author={Prakamya Mishra and Zonghai Yao and Shuwei Chen and Beining Wang and Rohan Mittal and Hong Yu},
-  year={2023},
-  url={https://api.semanticscholar.org/CorpusID:264812518}
+  author={Mishra, Prakamya and Yao, Zonghai and Chen, Shuwei and Wang, Beining and Mittal, Rohan and Yu, Hong},
+  journal={arXiv preprint arXiv:2310.20033},
+  year={2023}
 }
 ```
