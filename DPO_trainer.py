@@ -1,8 +1,8 @@
 from transformers import HfArgumentParser
 from trainer import ScriptArguments, load_dataset, trainer
+import os
 
 os.environ["WANDB_PROJECT"]="SyntheticEditTraining"
-import os
 
 parser = HfArgumentParser(ScriptArguments)
 
