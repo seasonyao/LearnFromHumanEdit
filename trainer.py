@@ -43,7 +43,11 @@ def load_dataset(
     # dataset = load_dataset("Anthropic/hh-rlhf", split=split, cache_dir=cache_dir)
     # dataset = load_from_disk('data/eden/DPO/' + split)
     if alignment_function in ['sft', 'dpo', 'salt']:
-        dataset = load_from_disk('data/avs/' + split)
+        if synthetic_dataset_type == 'pre_train':
+            dataset = load_from_disk('../AVS_Pretrain_Dataset'+'/' + split)
+        else:
+            dataset = load_from_disk('../datasets/'+synthetic_dataset_type+'/' + split)
+        # dataset = load_from_disk('./AVS_Pretrain_Dataset')
         
     if sanity_check:
         print('only train on 1000 samples')
@@ -77,7 +81,8 @@ class ScriptArguments:
     S_edited_C_weight: Optional[float] = field(default=1.0, metadata={"help": "sequence alignment weights"})
     S_edited_I_weight: Optional[float] = field(default=1.0, metadata={"help": "sequence alignment weights"})
     S_edited_S_weight: Optional[float] = field(default=1.0, metadata={"help": "sequence alignment weights"})
-
+    synthetic_data_type: Optional[str] = field(default='gpt4_edits_high_to_low', metadata={"help": "synthetic data type"})
+    
     # training parameters
     model_name_or_path: Optional[str] = field(default="gpt2", metadata={"help": "the model name"})
     learning_rate: Optional[float] = field(default=1e-3, metadata={"help": "optimizer learning rate"})
@@ -241,4 +246,4 @@ def trainer(script_args, train_dataset, eval_dataset):
         print(dpo_trainer.evaluate())
 
     # 6. train
-    # dpo_trainer.train()
+    dpo_trainer.train()
